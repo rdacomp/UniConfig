@@ -1,0 +1,29 @@
+// UniConfig.idl : type library source for UniConfig.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (UniConfig.tlb).
+
+[ uuid(CC5BE098-4179-47E9-B368-83F6A4D44E8B), version(1.0) ]
+library UniConfig
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for CUniConfigDoc
+	
+	[ uuid(A1EAACFD-DD02-4C1D-A3CE-6DD39FD01561) ]
+	dispinterface IUniConfig
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  Class information for CUniConfigDoc
+	
+	[ uuid(A0AC2801-A3FA-4D31-8153-3A8A9274FD15) ]
+	coclass CUniConfigDoc
+	{
+		[default] dispinterface IUniConfig;
+	};
+};
